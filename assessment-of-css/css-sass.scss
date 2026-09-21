@@ -1,0 +1,26 @@
+// task 8 give variables colors 
+
+$primary-color: #f9f9f9;
+$background-color: #663838;
+
+.task8-variable {
+  color: $primary-color;
+    background-color: $background-color;
+    padding: 10px;
+}  
+
+
+nav{
+    ul{
+
+        li{
+            color: blue;
+            ul{
+                li{
+                    list-style: none;  
+                    color: red; 
+                } 
+            }
+        }
+    }
+}

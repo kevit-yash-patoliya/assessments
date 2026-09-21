@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 1. html structure -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assessment-2026</title>
+</head>
+
+<body>
+    <!-- 2. Basic HTML structure -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <!-- 3. Unordered List-->
+    <ul>
+        <li>Cricket</li>
+        <li>Reading</li>
+        <li>listening</li>
+        <li>Chess</li>
+        <li>Online Games</li>
+    </ul>
+    <!-- 4. Embed an image   -->
+    
+    
+
+    <!-- 
+    
+    problem : The image itself loads correctly, but alt="not found" is not a description of the image content; it reads as an error message. The task requires alt text that describes the image (e.g. "a red strawberry on a table").
+    fix : Now It's correctly named. 
+    
+    -->
+
+    
+    
+    
+    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSePdo08x5Ma2ya2ZruX8oCzd61G9HhbvXpFqSp55BBvQQrLdOp"
+        alt="A red strawberry on a table">
+    <br>
+    <br>
+    <!-- 5. Clickable link   -->
+    <a href="https://www.google.com" target="_blank">visit google site</a>
+    <br>
+    <br>
+
+    <!-- 6. Table  -->
+    <table border="3" >
+        <thead>
+            <tr>
+                <th>
+                    Date
+                </th>
+
+                <th>
+                    Time
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>
+                    08/06/2026
+                </td>
+                <td>
+                    01:00 PM
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    09/06/2026
+                </td>
+                <td>
+                    02:00 PM
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    10/06/2026
+                </td>
+                <td>
+                    03:00 PM
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+    <!-- 7. Form  -->
+    <!-- 
+    problem : " The name and email inputs use only placeholder text, with no <label> element anywhere in the form. 
+            Placeholder text disappears once the user starts typing and is not a substitute for a label. "
+    fix: Now It's correctly labeled. -->
+
+<form>
+        <h2>Contact Form</h2>
+        <label for="name">Name :</label>
+        <input type="text" placeholder="name" name="name" /><br>
+        <br>
+        <label for="name">Email :</label>
+        <input type="email" placeholder="email" name="email" /><br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- 8. Style  -->
+    <p id="paragraph-id" class="paragraph-class"
+        style="border: 1px solid rgb(226, 157, 157); padding: 10px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(92, 97, 101);">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, assumenda corrupti labore aliquid
+        distinctio perspiciatis rem provident exercitationem corporis eius!
+    </p>
+    <!-- 9. Nested Unordered  -->
+
+    <ul>
+        <li>
+            Categories
+            <ul>
+                <li>
+                    sub-item 1
+                </li>
+                <li>
+                    sub-item 2
+                    <ul>
+                        <li>description 1</li>
+                    </ul>
+                </li>
+                <li>
+                    sub-item 3
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <br>
+    <br>
+    <!-- 10. Footer  -->
+<!-- Problem : The footer contains only the copyright text; there is no link at all, let alone one labeled for a privacy policy. The task explicitly requires a link to a privacy policy inside the footer. 
+Fix : Now Link is given to text fro privacy policy     -->
+<footer>
+        <p>&copy; All rights reserved 2026</p>
+        <p><a href="#privacy_policy">Privacy Policy</a></p>
+    </footer>
+</body>
+
+</html>

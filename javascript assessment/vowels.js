@@ -1,7 +1,9 @@
+
+//fix : now handled case-sensitivity 
 function vowels(des) {
     let vowelCounts = 0;
     for(let i of des){
-        if(['a','i','e','o','u'].includes(i)){
+        if(['a','i','e','o','u','A','E','I','O','U'].includes(i)){
             vowelCounts++;
         }
     }

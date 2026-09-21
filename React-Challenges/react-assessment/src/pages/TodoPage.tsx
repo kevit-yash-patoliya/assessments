@@ -1,12 +1,13 @@
-import { useDispatch, useSelector } from "react-redux"
 import { add, type TodoItem } from "../redux/slices/todoSlices"
 import { useState } from "react";
+import {  useAppDispatch, useAppSelector, type RootState } from "../redux/store";
 
 export default function TodoPage(){
     
-    const todos = useSelector((state:any)=>state.todos.todos)
+    const todos = useAppSelector((state:RootState)=>state.todos.todos)
     const [TodoTitle,setTodoTitle] = useState<string | null>(null);
-    const dispatch = useDispatch()
+    // fix: type issue 
+    const dispatch = useAppDispatch();
     const addTodo = ()=>{
         dispatch(add({id:todos.length+1,title:TodoTitle || "New Todo"}))
         setTodoTitle(null)

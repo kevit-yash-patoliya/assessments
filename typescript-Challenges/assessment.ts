@@ -79,8 +79,9 @@ class Car{
         this.speed = speed
     }
 
+    // fix: accelerate function now increase a speed
     accelerate(speed:number){
-        this.speed = speed;
+        this.speed = speed+1;
         console.log(`New Speed is ${this.speed}`)
     }
 
@@ -130,9 +131,10 @@ console.log("\n")
 
 let typeAssertion:unknown = "hello"
 
-typeAssertion = typeAssertion as string
 console.log("Task 9: ======")
 console.log(typeAssertion)
+//fix: length is printed
+console.log((typeAssertion as string).length)
 
 console.log("\n")
 

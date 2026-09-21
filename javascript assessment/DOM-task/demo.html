@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Change on Click</title>
+</head>
+<style>
+    .dark{
+        background-color: rgb(0, 0, 0);
+        color: rgb(253, 244, 244);
+    }
+</style>
+<body>
+
+    <!-- dom task 1 : toggle background color -->
+    <div style="width: 100px; height: 100px;" id="task1div">
+        <button id="task1button">Click me</button>
+    </div>
+
+    <!-- dom task 2 : Add List in Unorder list -->
+    <h3>Enter a input for add</h3>
+    <input type="text" id="task2input">
+        <button id="task2button">ADD</button>
+
+    <ul>
+        <li>
+            hello
+        </li>
+    </ul>
+
+    <!-- dom task 3 : Para. text change -->
+     <h3>change paragraph text</h3>
+    <button id="task3button">change me</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, impedit.</p>
+    
+        <script defer src="demo.js"></script>
+
+
+        <!-- dom task 4 : Remove Element from DOM  -->
+    <h3>Remove Element from DOM</h3>
+    <button id="task4button">Click to remove</button>    
+    <div id="task4div">
+            Hey I will remove 
+        </div>
+
+
+        <!-- dom task 5 : Toggle CSS class  -->    
+    <h3>Toggle Class for dark mode</h3>
+    <button id="task5button">mode</button>    
+
+        <div class="dark" id="task5div" style="width: 300px; height: 300px;">
+            Task 5 Toggle Class 
+        </div>
+
+
+    
+</body>
+</html>

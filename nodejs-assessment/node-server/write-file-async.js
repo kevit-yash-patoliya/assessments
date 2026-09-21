@@ -2,16 +2,30 @@ const fs = require("fs")
 const fsPromise = require("fs/promises")
 // Task 8 : Write file in async manner
 
-fs.writeFile("writefile-fs.txt", "Node Js Assessment" , "utf-8",(err)=>{
-    if(err){
+fs.writeFile("writefile-fs.txt", "Node Js Assessment", "utf-8", (err) => {
+    if (err) {
         console.log(err)
-    }else{
+    } else {
         console.log("Using fs module to write a file async manner")
     }
 })
 
-fsPromise.writeFile("writefile-fs-promise.txt", "Node Js Assessment" , "utf-8").then(()=>{
+fsPromise.writeFile("writefile-fs-promise.txt", "Node Js Assessment", "utf-8").then(() => {
     console.log("Using fs/promise module to write a file async manner")
-}).catch((err)=>{
+}).catch((err) => {
     console.log(err)
 })
+
+async function writeFile() {
+    try {
+
+        await fsPromise.writeFile("writefile-fs-promise-modern.txt", "Node Js Assessment data", "utf-8")
+
+        console.log("Using fs/promise module to write a file async manner with modern programming")
+
+    } catch (err) {
+        console.log(err)
+    }
+}
+
+writeFile()

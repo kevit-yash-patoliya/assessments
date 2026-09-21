@@ -19,3 +19,17 @@ fsPromise.readFile("readFile.txt", "utf-8").then((data)=>{
 }).catch((err)=>{
     console.log(err)
 })
+
+
+async function readFile(){
+    try{
+
+        const data = await fsPromise.readFile("readFile.txt", "utf-8")
+            console.log("Using fs/promise module to read a file async manner modern programming")
+            console.log(data)
+        }catch(err){
+            console.log(err);
+        }
+}
+
+readFile()
